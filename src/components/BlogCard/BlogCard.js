@@ -11,6 +11,11 @@ function BlogCard({title, content, author, date, categories}) {
             <span className='author-name'> {author.name} </span>
             <span className='blog-date'> {date} </span>
         </div>
+        {
+          categories.map((category, i)=> {
+            return <span key={i} className='blog-categories'> {category} </span>
+          })
+        }
     </div>
   )
 }

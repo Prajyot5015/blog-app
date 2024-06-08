@@ -3,7 +3,7 @@
     padding: 10px;
     margin: 10px;
     width: 350px;
-    height: 150px;
+    height: 180px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -12,10 +12,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .blog-title{
-   font-size: 20px; 
+   font-size: 22px; 
 }
 .blog-content-preview{
-    font-size: 14px; 
+    font-size: 17px; 
     padding: 10px;  
 }
 .author-card{
@@ -37,4 +37,12 @@
     margin-left: 80px;
     color: #454545;
     font-size: 15px;
+}
+.blog-categories{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 10px;
+    margin: 3px;
+    font-size: 12px;
+    border-radius: 20px;
 }
