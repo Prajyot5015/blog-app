@@ -9,7 +9,9 @@ function Home() {
       <div className='blogs-container'>
       {
         blogs.map((blogObject, i) => {
-            const {title,
+            const {
+                id,
+                title,
                 content,
                 author,
                 date,
@@ -19,6 +21,7 @@ function Home() {
             return (
               <BlogCard 
                 key={i}
+                id={id}
                 title={title}
                 content={content}
                 author={author}
