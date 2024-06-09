@@ -1,5 +1,5 @@
 .blog-card{
-    background-color: bisque;
+    background-color: #fff;
     padding: 10px;
     margin: 10px;
     width: 350px;
@@ -35,7 +35,7 @@
 }
 .blog-date{
     margin-left: 80px;
-    color: #454545;
+    color: #4545459d;
     font-size: 15px;
 }
 .blog-categories{
