@@ -2,6 +2,12 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import blogs from './../../data'
 import './BlogView.css'
+import ChatImg from './chat.png'
+import ClapImg from './clap.png'
+import MoreImg from './more.png'
+import PlayImg from './play-button.png'
+import SaveImg from './save-instagram.png'
+import ShareImg from './share.png'
 
 function BlogView() {
   const { id } = useParams()
@@ -24,6 +30,18 @@ function BlogView() {
             <span className='dot'>.</span>
             <span  className='dim-color'> {selectBlog.date} </span>
           </div>
+        </div>
+      </div>
+      <div className='like-share-container'>
+        <div> 
+          <img src={ClapImg} className='like'/>
+          <img src={ChatImg} className='like'/>
+        </div>
+        <div> 
+          <img src={SaveImg} className='icon'/>
+          <img src={PlayImg} className='icon'/>
+          <img src={ShareImg} className='icon'/>
+          <img src={MoreImg} className='icon'/>
         </div>
       </div>
     </div>
