@@ -1,0 +1,40 @@
+.blog-detail-container {
+    margin: 50px auto;
+    width: 700px;
+}
+
+.title {
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.dot {
+    font-size: 20px;
+    padding: 2px 5px;
+}
+
+.follow {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.dim-color {
+    color: #454545;
+}
