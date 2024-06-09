@@ -58,6 +58,18 @@ function BlogView() {
             return <span key={i} className='categories'> {category} </span>
           })
         }
+           <div className='like-share-container'>
+        <div>
+          <img src={ClapImg} className='like' />
+          <img src={ChatImg} className='like' />
+        </div>
+        <div>
+          <img src={SaveImg} className='icon' />
+          <img src={PlayImg} className='icon' />
+          <img src={ShareImg} className='icon' />
+          <img src={MoreImg} className='icon' />
+        </div>
+      </div>
     </div>
   )
 }
