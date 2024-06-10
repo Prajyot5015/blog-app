@@ -8,9 +8,12 @@ import MoreImg from './more.png'
 import PlayImg from './play-button.png'
 import SaveImg from './save-instagram.png'
 import ShareImg from './share.png'
+import { useState } from 'react';
 
 function BlogView() {
   const { id } = useParams()
+
+  const [count, setCount] = useState(0);
 
   const selectBlog = blogs.find((blogObject) => blogObject.id === id)
 
@@ -19,7 +22,8 @@ function BlogView() {
     content,
     author,
     date,
-    categories
+    categories,
+    readTime
   } = selectBlog
 
   return (
@@ -34,15 +38,16 @@ function BlogView() {
             <span className='follow'>Follow</span>
           </div>
           <div>
-            <span className='dim-color'> 3 min read </span>
+            <span className='dim-color'> {readTime} </span>
             <span className='dot'>.</span>
             <span className='dim-color'> {date} </span>
           </div>
         </div>
       </div>
       <div className='like-share-container'>
-        <div>
-          <img src={ClapImg} className='like' />
+        <div className='like-comment-container'>
+          <img src={ClapImg} className='like' onClick={() => setCount(count + 1)} />
+          <span className='likes-count'> {count} </span>
           <img src={ChatImg} className='like' />
         </div>
         <div>
@@ -54,13 +59,14 @@ function BlogView() {
       </div>
       <p className='blog-content'> {content} </p>
       {
-          categories.map((category, i)=> {
-            return <span key={i} className='categories'> {category} </span>
-          })
-        }
-           <div className='like-share-container'>
-        <div>
-          <img src={ClapImg} className='like' />
+        categories.map((category, i) => {
+          return <span key={i} className='categories'> {category} </span>
+        })
+      }
+      <div className='like-share-container'>
+      <div className='like-comment-container'>
+          <img src={ClapImg} className='like' onClick={() => setCount(count + 1)} />
+          <span className='likes-count'> {count} </span>
           <img src={ChatImg} className='like' />
         </div>
         <div>
@@ -70,6 +76,7 @@ function BlogView() {
           <img src={MoreImg} className='icon' />
         </div>
       </div>
+      <p className='bottom-author-name'>Written by {selectBlog.author.name} </p>
     </div>
   )
 }

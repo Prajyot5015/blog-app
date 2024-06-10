@@ -49,7 +49,12 @@
 }
 .like{
     width: 30px;
-    padding: 20px;
+    padding: 15px;
+}
+.like-comment-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon{
     width: 20px;
@@ -71,4 +76,11 @@
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
+}
+.bottom-author-name{
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
 }

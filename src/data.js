@@ -8,7 +8,8 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=58"
         },
         date: "June 08 2024",
-        categories: ["React", "Javascript", "Frontend"]
+        categories: ["React", "Javascript", "Frontend"],
+        readTime: "3 min read"
     },
     {
         id: "understanding-the-event-loop-in-javaScript",
@@ -19,7 +20,8 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=56"
         },
         date: "June 07 2024",
-        categories: ["Javascript", "Asynchronous Programming"]
+        categories: ["Javascript", "Asynchronous Programming"],
+        readTime: "5 min read"
     },
     {
         id: "a-guide-to-css-grid",
@@ -30,7 +32,8 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=53"
         },
         date: "June 06 2024",
-        categories: ["CSS", "Frontend", "Web Design"]
+        categories: ["CSS", "Frontend", "Web Design"],
+        readTime: "7 min read"
     },
     {
         id: "state-management-with-redux",
@@ -41,7 +44,8 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=33"
         },
         date: "June 05 2024",
-        categories: ["Redux", "State Management", "React"]
+        categories: ["Redux", "State Management", "React"],
+        readTime: "4 min read"
     },
     {
         id: "introduction-to-typeScript",
@@ -52,7 +56,8 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=11"
         },
         date: "June 04 2024",
-        categories: ["TypeScript", "Javascript", "Programming"]
+        categories: ["TypeScript", "Javascript", "Programming"],
+        readTime: "9 min read"
     },
     {
         id: "understanding-react-hooks",
@@ -63,9 +68,10 @@ const blogs = [
             avatar: "https://i.pravatar.cc/150?img=12"
         },
         date: "June 10 2024",
-        categories: ["React", "JavaScript", "Frontend Development"]
+        categories: ["React", "JavaScript", "Frontend Development"],
+        readTime: "6 min read"
     }
-    
+
 ]
 
 export default blogs;
