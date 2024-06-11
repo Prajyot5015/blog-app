@@ -2,18 +2,13 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import blogs from './../../data'
 import './BlogView.css'
-import ChatImg from './chat.png'
-import ClapImg from './clap.png'
-import MoreImg from './more.png'
-import PlayImg from './play-button.png'
-import SaveImg from './save-instagram.png'
-import ShareImg from './share.png'
-import { useState } from 'react';
+import LikeShareCard from './../../components/LikeShareCard/LikeShareCard'
+
 
 function BlogView() {
   const { id } = useParams()
 
-  const [count, setCount] = useState(0);
+ 
 
   const selectBlog = blogs.find((blogObject) => blogObject.id === id)
 
@@ -44,38 +39,14 @@ function BlogView() {
           </div>
         </div>
       </div>
-      <div className='like-share-container'>
-        <div className='like-comment-container'>
-          <img src={ClapImg} className='like' onClick={() => setCount(count + 1)} />
-          <span className='likes-count'> {count} </span>
-          <img src={ChatImg} className='like' />
-        </div>
-        <div>
-          <img src={SaveImg} className='icon' />
-          <img src={PlayImg} className='icon' />
-          <img src={ShareImg} className='icon' />
-          <img src={MoreImg} className='icon' />
-        </div>
-      </div>
+      <LikeShareCard />
       <p className='blog-content'> {content} </p>
       {
         categories.map((category, i) => {
           return <span key={i} className='categories'> {category} </span>
         })
       }
-      <div className='like-share-container'>
-      <div className='like-comment-container'>
-          <img src={ClapImg} className='like' onClick={() => setCount(count + 1)} />
-          <span className='likes-count'> {count} </span>
-          <img src={ChatImg} className='like' />
-        </div>
-        <div>
-          <img src={SaveImg} className='icon' />
-          <img src={PlayImg} className='icon' />
-          <img src={ShareImg} className='icon' />
-          <img src={MoreImg} className='icon' />
-        </div>
-      </div>
+      <LikeShareCard />
       <p className='bottom-author-name'>Written by {selectBlog.author.name} </p>
     </div>
   )

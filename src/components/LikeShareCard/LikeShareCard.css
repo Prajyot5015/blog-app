@@ -1,0 +1,28 @@
+
+.like-share-container{
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.like{
+    width: 30px;
+    padding: 15px;
+}
+.like-comment-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 20px;
+    padding: 20px;
+}
+.icon:hover,
+.like:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
