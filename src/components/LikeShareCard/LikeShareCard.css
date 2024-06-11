@@ -26,3 +26,9 @@
     transform: scale(1.2);
     transition: .3s;
 }
+
+@media screen and (max-width: 500px) {
+    .like, .icon{
+        padding: 10px;
+    }
+}
