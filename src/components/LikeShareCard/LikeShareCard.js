@@ -16,15 +16,15 @@ function LikeShareCard() {
     return (
         <div className='like-share-container'>
             <div className='like-comment-container'>
-                <img src={ClapImg} className='like' onClick={() => setCount(count + 1)} />
+                <img src={ClapImg} alt='image not found' className='like' onClick={() => setCount(count + 1)} />
                 <span className='likes-count'> {count} </span>
-                <img src={ChatImg} className='like' />
+                <img src={ChatImg} alt='image not found' className='like' />
             </div>
             <div>
-                <img src={SaveImg} className='icon' />
-                <img src={PlayImg} className='icon' />
-                <img src={ShareImg} className='icon' />
-                <img src={MoreImg} className='icon' />
+                <img src={SaveImg} alt='image not found' className='icon' />
+                <img src={PlayImg} alt='image not found' className='icon' />
+                <img src={ShareImg} alt='image not found' className='icon' />
+                <img src={MoreImg} alt='image not found' className='icon' />
             </div>
         </div>
     )
