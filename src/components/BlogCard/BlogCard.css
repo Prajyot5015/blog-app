@@ -48,3 +48,10 @@
     font-size: 14px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 500px) {
+    .blog-card{
+        width: 90%; 
+        height: auto;
+    }
+}
