@@ -6,20 +6,21 @@ import BlogCard from '../../components/BlogCard/BlogCard'
 function Home() {
   return (
     <>
+      <h1 className='main-title'>Blogs</h1>
       <div className='blogs-container'>
-      {
-        blogs.map((blogObject, i) => {
+        {
+          blogs.map((blogObject, i) => {
             const {
-                id,
-                title,
-                content,
-                author,
-                date,
-                categories
+              id,
+              title,
+              content,
+              author,
+              date,
+              categories
             } = blogObject
 
             return (
-              <BlogCard 
+              <BlogCard
                 key={i}
                 id={id}
                 title={title}
@@ -29,8 +30,8 @@ function Home() {
                 categories={categories}
               />
             )
-        })
-    }
+          })
+        }
       </div>
     </>
   )
